@@ -5,7 +5,7 @@ import { asc, count, desc, ilike } from 'drizzle-orm'
 import { z } from 'zod'
 
 const getUploadsInput = z.object({
-  searchQuery: z.string(),
+  searchQuery: z.string().optional(),
   sortBy: z.enum(['createdAt']).optional(),
   sortDirection: z.enum(['asc', 'desc']).optional(),
   page: z.number().optional().default(1),

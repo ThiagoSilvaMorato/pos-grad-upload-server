@@ -83,5 +83,5 @@ export async function exportUploads(
 
   await convertToCSVPipeLine
 
-  return makeRight({ reportUrl: '' })
+  return makeRight({ reportUrl: url })
 }

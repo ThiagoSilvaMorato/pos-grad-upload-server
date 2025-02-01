@@ -21,6 +21,7 @@ describe('upload image', () => {
       }
     })
   })
+
   it('should be able to upload an image', async () => {
     const fileName = `${randomUUID()}.jpg`
 
